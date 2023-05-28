@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Productos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+        h1 {
+            color: #ec0707;
+        }
+        .details {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .label {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .value {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="details">
+        <h1>Producto</h1>
+        <div class="label">Código:</div>
+        <div class="value" th:text="${codigo}"></div>
+        <div class="label">Producto:</div>
+        <div class="value" th:text="${producto}"></div>
+        <div class="label">Descripción:</div>
+        <div class="value" th:text="${descripcion}"></div>
+        <div class="label">Precio:</div>
+        <div class="value" th:text="${precio}"></div>
+    </div>
+</body>
+</html>

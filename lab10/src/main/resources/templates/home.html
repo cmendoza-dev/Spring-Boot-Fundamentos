@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Datos Personales</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        .details {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .label {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .value {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="details">
+        <h1>Datos Personales</h1>
+        <div class="label">Nombres:</div>
+        <div class="value" th:text="${name}"></div>
+        <div class="label">Apellidos:</div>
+        <div class="value" th:text="${last_name}"></div>
+        <div class="label">Edad:</div>
+        <div class="value" th:text="${age}"></div>
+        <div class="label">Dirección:</div>
+        <div class="value" th:text="${address}"></div>
+        <div class="label">Correo:</div>
+        <div class="value" th:text="${email}"></div>
+    </div>
+</body>
+</html>
