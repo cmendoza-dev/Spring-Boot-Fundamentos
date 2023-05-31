@@ -14,18 +14,19 @@ public class HomeController {
 
     @GetMapping("/")
     public String home(Model model) {
-
-        String name = "Carlos";
+        int codigo = 00013;
         String last_name = "Mendoza Solis";
-        int age = 19;
-        String address = "Ubr. Buenos Aires Sur";
-        String email = "carlos.mendoza.s@tecsup.edu.pe";
+        String name = "Carlos";
+        int dni = 62228372;
+        String ocupacion = "Software Development";
+        String sueldo = "1056";
 
-        model.addAttribute("name", name);
+        model.addAttribute("codigo", codigo);
         model.addAttribute("last_name", last_name);
-        model.addAttribute("age", age);
-        model.addAttribute("address", address);
-        model.addAttribute("email", email);
+        model.addAttribute("name", name);
+        model.addAttribute("dni", dni);
+        model.addAttribute("ocupacion", ocupacion);
+        model.addAttribute("sueldo", sueldo);
 
         return "home";
     }

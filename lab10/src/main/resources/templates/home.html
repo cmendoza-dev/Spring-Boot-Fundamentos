@@ -29,17 +29,19 @@
 </head>
 <body>
     <div class="details">
-        <h1>Datos Personales</h1>
-        <div class="label">Nombres:</div>
-        <div class="value" th:text="${name}"></div>
+        <h1>Empleado</h1>
+        <div class="label">Código:</div>
+        <div class="value" th:text="${codigo}"></div>
         <div class="label">Apellidos:</div>
         <div class="value" th:text="${last_name}"></div>
-        <div class="label">Edad:</div>
-        <div class="value" th:text="${age}"></div>
-        <div class="label">Dirección:</div>
-        <div class="value" th:text="${address}"></div>
-        <div class="label">Correo:</div>
-        <div class="value" th:text="${email}"></div>
+        <div class="label">Nombres:</div>
+        <div class="value" th:text="${name}"></div>
+        <div class="label">DNI:</div>
+        <div class="value" th:text="${dni}"></div>
+        <div class="label">Ocupación:</div>
+        <div class="value" th:text="${ocupacion}"></div>
+        <div class="label">Sueldo:</div>
+        <div class="value" th:text="${sueldo}"></div>
     </div>
 </body>
 </html>

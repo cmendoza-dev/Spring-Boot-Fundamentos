@@ -14,12 +14,12 @@ public class ProductController {
 
         int codigo = 000001;
         String producto = "MacBook";
-        String descripcion = "Última generación";
-        int precio = 2000;
+        String cantidad = "Última generación";
+        int precio = 3000;
 
         model.addAttribute("codigo", codigo);
         model.addAttribute("producto", producto);
-        model.addAttribute("descripcion", descripcion);
+        model.addAttribute("cantidad", cantidad);
         model.addAttribute("precio", precio);
 
         return "product";
